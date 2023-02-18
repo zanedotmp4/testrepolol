@@ -17,9 +17,9 @@ class User(db.Model):
     def toJSON(self):
         return{
             'id': self.id,
-            'username': self.username
-            'email':self.email
-            'isHOD'.self.isHOD
+            'username': self.username,
+            'email':self.email,
+            'isHOD':self.type1
         }
 
     def set_password(self, password):

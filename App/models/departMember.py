@@ -12,7 +12,7 @@ class departmentMember(db.Model):
         self.isHod = True
     def toJSON(self):
         return{
-            'id':self.id
+            'id':self.id,
             'userID':self.userID,
             'isHod':self.isHod
 
